@@ -119,8 +119,8 @@ function strOps(str) {
 
 	return Math.round(sum / letterArr.length);
 }
-// console.log(strOps("Hello5,23-32,defge"));
-// console.log(strOps("1o5,2e3d6fg9jhvjhv32s2"));
+console.log(strOps('Hello5,23-32,defge'));
+console.log(strOps('1o5,2e3d6fg9jhvjhv32s2'));
 
 // Exam 2 : Question 3 -->
 

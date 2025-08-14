@@ -178,7 +178,7 @@ function birthday(s, d, m) {
 // Week 2
 
 // Question 1 : Sales by Match
-function sockMerchant(n, arr) {
+function sockMerchant(arr) {
 	let tempset = [...new Set(arr)];
 	let count = 0;
 	tempset.forEach((value) => {
@@ -187,7 +187,10 @@ function sockMerchant(n, arr) {
 	});
 	return count;
 }
-// console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+console.log(
+	'sockMerchant => ',
+	sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20])
+);
 
 // Question 3 : Drawing Book
 function pageCount(n, p) {
@@ -465,8 +468,17 @@ function QuestionsMarks(str) {
 
 // Question :
 /*
-c
-*/
+ * Have the function arrayAdditionI(arr) take the array of numbers stored in arr
+ * and return the string true if any combination of numbers in the array
+ * (excluding the largest number) can be added up to equal the largest number in
+ * the array, otherwise return the string false. For example: if arr contains
+ * [4, 6, 23, 10, 1, 3] the output should return true because 4 + 6 + 10 + 3 =
+ * 23. The array will not be empty, will not contain all the same elements, and
+ * may contain negative numbers.
+ *
+ * @param  {array} arr
+ * @return {string} true or false
+ */
 function arrayAdditionI(arr) {
 	arr = arr.sort((a, b) => a - b);
 	let sum = 0;
